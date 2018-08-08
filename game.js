@@ -21,7 +21,7 @@ function gameLoop() {
         }
     });
 
-    if (random() < 0.0001) {
+    if (random() < 0.0001 || frameCount % 3600 === 0) {
         meteors.push(new Meteor());
     }
 }

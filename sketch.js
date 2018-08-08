@@ -14,11 +14,6 @@ let dodged;
 let hiScore = 0;
 let ship, meteors, stars;
 
-// let videoReady = false;
-// let mobileReady = false;
-// let modelReady = false;
-// let trainReady = false;
-
 function setup() {
     const canvas = createCanvas(640, 480);
     background(0);
@@ -99,7 +94,7 @@ function changeState(state) {
     gameState = state;
     
     if (state === 0) {
-        select('#info').html('Add gestures corresponding to the relevant movements. Press train when done.');
+        select('#info').html('Add images you wish to correspond to relevant movements. Press train when done.');
         select('#buttons').show();
         select('#train').show();
     } else {
